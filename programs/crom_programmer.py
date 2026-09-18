@@ -120,7 +120,7 @@ def gen_microcode():
                 control_word |= (1 << nIRD_OE) | (1 << nMARH_LD)
             elif microstep == 7: # jump to vector & clear hardware IRQ latch
                 control_word |= (1 << PC_OE) | (1 << nPC_LD) | (1 << nMAR_OE)
-            elif microstep == 8:
+            elif microstep == 8: ## must happen before jumping (because now the pc is pointing to another opcode (how can if be fixed?))
                 control_word |= (1 << nMPC_RST) | (1 << I_WRITE) | (1 << I_SET) | (1 << nCLR_IRQ)
         else:
             if microstep == 0:

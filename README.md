@@ -1,6 +1,6 @@
-# ALEPH-8 -- CPU Design & Implementation
+# SFD-8 -- CPU Design & Implementation
 
-The Aleph-8 is an 8-bit Von Neumann architecture with a 16-bit address bus built entirely from 74HC ICs.
+The SFD-8 is an 8-bit Von Neumann architecture with a 16-bit address bus built entirely from 74HC ICs.
 ## Overview
 
 This repository contains the complete design and documentation of the CPU simulation (made in Digital), as well as the code for the assembler and the programmer of the control unit.
@@ -15,7 +15,7 @@ My goal with this repository is to have a place to deposit all my documentation 
 
 (Missing a block diagram, will do once finished)
 
-<img src="../Attachments/cpu.png" alt="ALU Block Diagram" width="900" />
+<img src="notes/Attachments/cpu.png" alt="General Architecture" width="900" />
 
 ### Main modules
 
@@ -39,6 +39,7 @@ Currently, I'm documenting each module, and the ones finished are:
 - Stack Pointer
 - Program Counter
 - Memory Address Register
+- Status Register
 
 The rest are not done or completed yet.
 
